@@ -10,10 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            Text("Hello, World!").background(Color.red)
-            Divider()
-            Text("high")
+        ZStack {
+            Color.red
+            VStack(alignment: .center) {
+                HStack(alignment: .center) {
+                    Text("Hello, Red World!").background(Color.red).edgesIgnoringSafeArea(.all)
+                    Text("Hello, Blue World!").background(Color.blue)
+                }
+                Divider()
+                HStack(alignment: .center) {
+                    Text("high").background(Color.blue)
+                }
+            }.background(Color.green)
         }
     }
 }
