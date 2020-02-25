@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Text("Hello, World!")
+            Text("Hello, World!").background(Color.red)
             Divider()
             Text("high")
         }
