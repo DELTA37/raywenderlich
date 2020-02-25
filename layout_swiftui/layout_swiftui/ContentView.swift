@@ -21,8 +21,8 @@ struct ContentView: View {
                 HStack(alignment: .center) {
                     Text("high").background(Color.blue)
                 }
-            }.background(Color.green)
-        }
+            }.background(Color.green).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
     }
 }
 
