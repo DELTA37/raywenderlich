@@ -20,7 +20,7 @@ struct ContentView: View {
                 Divider()
                 HStack(alignment: .center) {
                     Text("high").background(Color.blue)
-                }
+                }.frame(minWidth: 0, maxWidth: 100, minHeight: 0, maxHeight: 100, alignment: .center)
             }.background(Color.green).frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
         }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
     }
